@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最寄駅アプリ</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <haeder class="header">
+    <div class="header-contents">
+      <h1>最寄駅表示アプリ</h1>
+    </div>
+  </haeder>
+
+  <section class="main-section">
+    <div class="app">
+      <div id="js-map-area" class="map-area"></div>
+      <div id="js-near-station" class="near-station"></div>
+    </div>
+  </section>
+  <script src="js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf-TFoq4vVBARfwMusBQhuJEyaWV2Nvec&callback=initMap">
+  </script>
+</body>
+
+</html>

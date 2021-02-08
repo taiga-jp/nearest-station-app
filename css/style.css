@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #5f6368;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.header-contents {
+  display: flex;
+  padding: 0 16px;
+}
+
+.header-contents h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.main-section {
+  padding-top: 64px;
+}
+
+.app {
+  display: flex;
+  margin: 0 auto;
+  padding: 32px 16px;
+  width: 100%;
+  max-width: 1280px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.map-area {
+  width: 60%;
+  height: 400px;
+  border-radius: 4px;
+}
+
+.near-station {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.near-station ul {
+  margin: 0;
+  padding-left: 64px;
+}
+
+.near-station ul li {
+  margin-bottom: 16px;
+  font-size: 18px;
+  list-style: none;
+  line-height: 1.5;
+}

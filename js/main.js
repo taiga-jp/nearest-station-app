@@ -12,7 +12,6 @@ function initMap() {
       .then(res => res.json())
       .then(info => {
         var stations = info.response.station;
-        console.log(stations);
 
         var markerData = [{
           name: '現在地',
@@ -44,7 +43,6 @@ function initMap() {
           zoom: 15 // 地図のズームを指定
         });
         markerData.forEach((pin, i) => {
-          console.log(pin);
           marker[i] = new google.maps.Marker({
             position: pin.position,
             map: map
@@ -76,7 +74,6 @@ function getExpress(position) {
     .then(res => res.json())
     .then(info => {
       var stations = info.response.station;
-      console.log(stations);
       return stations;
     });
 }

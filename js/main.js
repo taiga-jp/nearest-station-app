@@ -7,7 +7,7 @@ function initMap() {
   function success(pos) {
     var stationArea = document.getElementById('js-near-station');
     var innerHtml = "<ul>";
-    var url = `http://express.heartrails.com/api/json?method=getStations&x=${pos.coords.longitude}&y=${pos.coords.latitude}`;
+    var url = `https://express.heartrails.com/api/json?method=getStations&x=${pos.coords.longitude}&y=${pos.coords.latitude}`;
     fetch(url)
       .then(res => res.json())
       .then(info => {
